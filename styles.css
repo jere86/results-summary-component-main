@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+main {
+    height: 32rem;
+    width: 46rem;
+    display: flex;
+    flex-direction: row;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 1rem 2rem 3rem hsl(221, 100%, 96%), -1rem 2rem 3rem hsl(221, 100%, 96%);
+}
+
+.result, .summary {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 2rem;
+}
+
+.result {
+    align-items: center;
+    padding: 2.5rem 3.5rem 3.5rem;
+    color: hsl(241, 100%, 89%);
+    background-image: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+}
+
+.result h1 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.circle {
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    background-image: linear-gradient(0deg, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+}
+
+.circle span {
+    font-size: 4.2rem;
+    font-weight: 900;
+    color: hsl(0, 0%, 100%);
+}
+
+.message {
+    height: 7.8rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message h2 {
+    font-size: 2rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.message p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.summary {
+    padding: 2.3rem 2.5rem 3rem;
+}
+
+.summary h2 {
+    align-self: flex-start;
+    font-weight: 900;
+    color: hsl(224, 30%, 27%);
+}
+
+.summary_result {
+    width: 100%;
+}
+
+.summary_result_item {
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.title {
+    margin-left: 1rem;
+}
+
+.number_result {
+    color: hsla(224, 30%, 27%, 0.5);
+}
+
+.number_result span {
+    color: hsl(224, 30%, 27%);
+    font-weight: 900;
+    margin-right: 0.5rem;
+}
+
+.summary_result > div:nth-child(1) {
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.summary_result > div:nth-child(2) {
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.summary_result > div:nth-child(3) {
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.summary_result > div:nth-child(4) {
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+button {
+    height: 3.5rem;
+    border: none;
+    border-radius: 2rem;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(224, 30%, 27%);
+    font-size: 1.1rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-image: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+}
+
+.icon_title {
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    position: absolute;
+    bottom: 0.5rem;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+footer a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+    main {
+        flex-direction: column;
+        min-height: 100vh;
+        border-radius: 0%;
+    }
+    .result, .summary {
+        width: 100%;
+    }
+    .result {
+        height: 37rem;
+        padding: 1.75rem 3rem 2.5rem;
+        border-radius: 0 0 2rem 2rem;
+    }
+    .result h1 {
+        font-size: 1rem;
+    }
+    .circle {
+        font-size: 1rem;
+        width: 8.75rem;
+        height: 8.75rem;
+    }
+    .circle span {
+        font-size: 3.5rem;
+    }
+    .message {
+        height: 5rem;
+        width: 100%;
+    }
+    .message h2 {
+        font-size: 1.5rem;
+    }
+    .message p {
+        font-size: 1rem;
+    }
+    .summary {
+        height: 100%;
+        padding: 2rem 2.5rem 2rem;
+    }
+    .summary h2 {
+        font-size: 1rem;
+    }
+  }
